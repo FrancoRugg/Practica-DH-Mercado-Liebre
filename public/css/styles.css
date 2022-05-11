@@ -1,0 +1,25 @@
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+.titulos h4{
+    font-size: 24px;
+}
+
+.titulos .precios{
+    font-size: 18px;
+}
+
+.titulos .descuentos-y-descripciones{
+    font-size: 16px;
+}
+
+.barras{
+    color:white;
+    background-color: blue;
+    text-align: center;
+}
