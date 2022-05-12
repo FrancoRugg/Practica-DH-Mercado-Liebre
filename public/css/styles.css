@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body * {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,7 +23,32 @@ p {
 }
 
 .barras{
+    margin: auto;
+    text-align: center;
+    width: 10%;
+    border-radius: 5px;
+    padding: 10px;
     color:white;
     background-color: blue;
-    text-align: center;
 }
+
+.barra-de-busqueda{
+    margin: solid 30px black;
+    width: 25%;
+    background-color: white;
+    color: #777672;
+}
+
+.contenedor1{
+    background-color: #EAC926;
+}
+
+.Pie-de-pagina{
+    width: 80%;
+    margin: auto;
+    background-color: #ebebeb;
+    color:#666;
+    text-align: center;
+   
+}
+
