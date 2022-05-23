@@ -14,57 +14,59 @@
     </head>
 <body>
     <header>
-        <img width="200" src="/img/logo-mercado-liebre.svg" alt="Logo">
-        <p class="barra-de-busqueda"><input type="text" placeholder="Buscar productos, marcas "><i class="fa-solid fa-magnifying-glass"></i> </p> 
-        
-   
-        <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de credito</p>
-        <article class="nav">
-        <nav>
-           <ul>
-            <li><a href="">Ofertas</a></li>
-            <li><a href="">Tiendas Oficiales</a> </li>
-            <li><a href="">Vender</a></li>
-            <li><a href="">Ayuda</a></li>
-           </ul>
-        </nav>
-        <nav>
-           <ul>
-               <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
-               <li><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
-               <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
-           </ul>   
-        </nav>  
-        </article>
-               <p class="barras"> <i class="fa-solid fa-bars"></i></p>
-   </header>
+        <div class="flex-conteiner">
+             <img width="200" class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo">
+             <p class="barra-de-busqueda"><input type="text" placeholder="Buscar productos, marcas "><i class="fa-solid fa-magnifying-glass"></i> </p> 
+        </div>
+         
+    
+         <p ><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de credito</p>
+         <article class="nav">
+         <nav>
+            <ul>
+             <li><a href="">Ofertas</a></li>
+             <li><a href="">Tiendas Oficiales</a> </li>
+             <li><a href="">Vender</a></li>
+             <li><a href="">Ayuda</a></li>
+            </ul>
+         </nav><br>
+         <nav>
+            <ul>
+                <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>   
+         </nav>  
+         </article>
+                <p class="barras"> <i class="fa-solid fa-bars"></i></p>
+    </header>
     <form action="/register" method="GET" class="registro">
-        <div>
+        <div class="style">
             <!-- <label for="nombreCompleto" id="nombreCompleto" class="titulos">Nombre y Apellido:</label> -->
             <input type="text" placeholder="Nombre y Apellido:" id="nombreCompleto" minlength="8" required></br>
         </div><br>
-        <div>
+        <div class="style">
             <!-- <label for="nombreUsuario" id="nombreUsuario" class="titulos">Nombre de Usuario:</label> -->
             <input type="text" placeholder="Nombre de Usuario:" id="nombreUsuario" minlength="3" required></br>
         </div><br>
-        <div>
+        <div class="style">
             <input type="mail" placeholder="E-mail" required><br><br>
         </div>
-        <div>
+        <div class="style">
             <label for="nacimiento" id="nacimiento" class="titulos">Fecha de Nacimiento:</label><br><br>
             <input type="date" value="aaaa-mm-dd" min="1950-01-01" max="2022-04-19" id="nacimiento" placeholder="mm/dd/yyyy" required></br>
         </div><br>
-        <div>
+        <div class="style">
             <!-- <label for="direccion" id="direccion" class="titulos">Domicilio:</label> -->
             <input type="text" placeholder="Domicilio:" id="direccion" minlength="10" required></br>
         </div><br>
-        <div>
-            <label for="interes comercial" id="interes comercial" class="titulos">Para que va a utilizar la cuenta?</label>
+        <div class="style">
+            <label for="interes comercial" id="interes comercial" class="titulos">Para que va a utilizar la cuenta?</label><br><br>
             <input type="radio" name="interes comercial" value="compra" id="interes comercial" required checked>Compra
             <input type="radio" name="interes comercial" value="venta" id="interes comercial" required>Venta
         </div><br>
         <div>
-            <label for="categoriasInteres" id="categoriasInteres" class="titulos">Categorias de Interés:</label><br>
+            <label for="categoriasInteres" id="categoriasInteres" class="titulos">Categorias de Interés:</label><br><br>
             
                 <input type="checkbox" value="electro">Electro</input><br>
                 <input type="checkbox"  value="moda">Moda</input><br>
@@ -73,15 +75,15 @@
                 <input type="checkbox"  value="vidaSana">Vida Sana</input><br>
             
         </div><br>
-        <div>
+        <div class="style">
             <label for="imagenPerfil" id="imagenPerfil" class="titulos">Imagen de Perfil:</label>
             <input type="file" name="imagenPerfil" accept=".png, .jpg" id="imagenPerfil"></br>
         </div><br>
-        <div>
+        <div class="style">
             <!-- <label for="contraseña" id="contraseña" class="titulos" >Contraseña:</label> -->
             <input type="password" placeholder="Contraseña:" id="contraseña" required minlength="5"></br>
         </div><br>
-        <div>
+        <div class="style">
             <!-- <label for="confirmarContraseña" id="confirmarContraseña" class="titulos">Confirmar Contraseña:</label> -->
             <input type="password" placeholder="Confirmar Contraseña:" id="confirmarContraseña" required minlength="5">
         </div><br>
