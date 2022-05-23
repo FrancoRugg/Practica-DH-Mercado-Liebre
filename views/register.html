@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercado Liebre</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    
+    </head>
+<body>
+    <header>
+        <img width="200" src="/img/logo-mercado-liebre.svg" alt="Logo">
+        <p class="barra-de-busqueda"><input type="text" placeholder="Buscar productos, marcas "><i class="fa-solid fa-magnifying-glass"></i> </p> 
+        
+   
+        <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de credito</p>
+        <article class="nav">
+        <nav>
+           <ul>
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a> </li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ayuda</a></li>
+           </ul>
+        </nav>
+        <nav>
+           <ul>
+               <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+               <li><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+               <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+           </ul>   
+        </nav>  
+        </article>
+               <p class="barras"> <i class="fa-solid fa-bars"></i></p>
+   </header>
+    <form action="/register" method="GET" class="registro">
+        <div>
+            <!-- <label for="nombreCompleto" id="nombreCompleto" class="titulos">Nombre y Apellido:</label> -->
+            <input type="text" placeholder="Nombre y Apellido:" id="nombreCompleto" minlength="8" required></br>
+        </div><br>
+        <div>
+            <!-- <label for="nombreUsuario" id="nombreUsuario" class="titulos">Nombre de Usuario:</label> -->
+            <input type="text" placeholder="Nombre de Usuario:" id="nombreUsuario" minlength="3" required></br>
+        </div><br>
+        <div>
+            <input type="mail" placeholder="E-mail" required><br><br>
+        </div>
+        <div>
+            <label for="nacimiento" id="nacimiento" class="titulos">Fecha de Nacimiento:</label><br><br>
+            <input type="date" value="aaaa-mm-dd" min="1950-01-01" max="2022-04-19" id="nacimiento" placeholder="mm/dd/yyyy" required></br>
+        </div><br>
+        <div>
+            <!-- <label for="direccion" id="direccion" class="titulos">Domicilio:</label> -->
+            <input type="text" placeholder="Domicilio:" id="direccion" minlength="10" required></br>
+        </div><br>
+        <div>
+            <label for="interes comercial" id="interes comercial" class="titulos">Para que va a utilizar la cuenta?</label>
+            <input type="radio" name="interes comercial" value="compra" id="interes comercial" required checked>Compra
+            <input type="radio" name="interes comercial" value="venta" id="interes comercial" required>Venta
+        </div><br>
+        <div>
+            <label for="categoriasInteres" id="categoriasInteres" class="titulos">Categorias de Interés:</label><br>
+            
+                <input type="checkbox" value="electro">Electro</input><br>
+                <input type="checkbox"  value="moda">Moda</input><br>
+                <input type="checkbox"  value="hogar">Hogar</input><br>
+                <input type="checkbox"  value="jugueteria">Juguetería</input><br>
+                <input type="checkbox"  value="vidaSana">Vida Sana</input><br>
+            
+        </div><br>
+        <div>
+            <label for="imagenPerfil" id="imagenPerfil" class="titulos">Imagen de Perfil:</label>
+            <input type="file" name="imagenPerfil" accept=".png, .jpg" id="imagenPerfil"></br>
+        </div><br>
+        <div>
+            <!-- <label for="contraseña" id="contraseña" class="titulos" >Contraseña:</label> -->
+            <input type="password" placeholder="Contraseña:" id="contraseña" required minlength="5"></br>
+        </div><br>
+        <div>
+            <!-- <label for="confirmarContraseña" id="confirmarContraseña" class="titulos">Confirmar Contraseña:</label> -->
+            <input type="password" placeholder="Confirmar Contraseña:" id="confirmarContraseña" required minlength="5">
+        </div><br>
+        <div class="botones">
+
+            <button type="submit" class="boton-registro">Enviar</button><br></br>
+            <button type="reset" class="boton-registro">Borrar</button>
+        </div><br>
+
+
+    </form>
+</body>
+<footer>
+    <section>
+
+            <p class="footerIcons"><i class="fa-solid fa-credit-card"></i></p>
+        <div>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            
+            <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés o efectivo en puntos de pago. ¡Y siempre es seguro!
+            </p>
+        </div>
+
+            <p class="footerIcons"><i class="fa-solid fa-gift"></i></p>
+
+        <div>
+            <h4>Envío gratis desde $ 2.500 </h4>
+
+            <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+            </p>
+        </div>
+
+            <p class="footerIcons"><i class="fa-solid fa-user-shield"></i></p>
+
+        <div>
+            <h4>Seguridad, de principio a fin</h4>
+
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </div>
+
+        <div>
+            <h4>Copyright c 1999-2020 MercadoLiebre S.R.L</h4>
+        </div>
+</section>
+</footer>
+</html>
