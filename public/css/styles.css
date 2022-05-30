@@ -21,8 +21,11 @@ body {
      
     
 }
-.logo, .barra-de-busqueda{
+.logo, .barra-de-busqueda, {
       width: 50%;
+}
+.grow{
+      flex-grow: 33.33;
 }
  header .flex-conteiner{
       display: flex;
@@ -59,6 +62,9 @@ main {
       color:white;
       background-color: blue;
 }
+.banner{
+    
+}
 
 .titles{
       font-size: 24px;
@@ -75,7 +81,16 @@ main {
 }
 
 .descripciones{
+      opacity: 0%;
       display: none;
+}
+main section div article:hover .articulos .descripciones{
+      display: block;
+      opacity: 100%;
+      
+}
+main section div article:hover{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .descuentos{
@@ -101,10 +116,29 @@ article {
       border-radius:solid 10px var(--green);
       color: var(--green);
       position: relative;
+      
+}
+main section div article div i:hover{
+      transform: rotate(-90deg);
+      transition: all 0.5s;
 }
 
 footer{
       background-color: var(--lightGray);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+     
+     
+}
+footer section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 8px;
+      flex-grow: 0.3;
 }
 .footerIcons{
       margin: auto;
@@ -112,7 +146,29 @@ footer{
       font-size: 2rem;
       color: blue;
       padding-bottom: 10px;
+      transition: all 1s;
 }
+.footerIcons:hover{
+      color: #03264C;
+}
+.credit{
+       
+}
+.gift{
+     
+}
+.shield{
+      
+}
+.copiright{
+      display:flex;
+      flex-direction: row;
+      align-items: flex-start;
+      left: 10px;
+      bottom: 10px;
+
+}
+
 main section article i{
       display: block;
       font-size: 16px;
@@ -143,21 +199,32 @@ main section article i{
       text-transform: uppercase;
       
 }
-
-.boton-login{
+.boton-registro{
+      width: 200px ;
+      
+      align-items: center;
+}
+.boton-registro, .boton-login{
       display: flex;
       flex-direction: column;
       background-color: blue;
       color: white;
       flex-wrap: wrap;
+      border-radius: 3px;
+      border-style: none;
+      
 
+}
+.boton-login{
+      width: 100% ;
+      
+      align-items: center;
 }
 
 .login{
       padding: 20px;
       background-color: var(--lightGray);
       align-self: center;
-      margin: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -165,20 +232,25 @@ main section article i{
       border-bottom: solid 2px var(--darkGray);
       border-top: solid 2px var(--darkGray);
 }
-  .style{
-       border-radius: solid  3px var(--darkGray);
-
+button:hover{
+      background-color: #0022AA;
+      color: white;
+      
+}
+  .style input{
+       border-radius: 4px;
+       width:250px ;
+       border-style: none;
+       
+}
+.style-log input{
+      border-radius: 4px;
+      width: 400px ;
+      border-style: none;
 }
 
 
 @media (min-width: 361px) {
-     .descripciones{
-           display: block;
-           box-shadow: 0px 0px 10px rgb(100, 100, 100);
-           font-size: 12px;
-            padding: 5px;
-           text-align: center;
-     }
      .nav{
            display: block;
      }
